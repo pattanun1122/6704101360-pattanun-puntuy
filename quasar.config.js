@@ -41,6 +41,7 @@ export default defineConfig((/* ctx */) => {
       },
 
       vueRouterMode: 'hash', // available values: 'hash', 'history'
+      publicPath: '/6704101360-pattanun-puntuy/',
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
@@ -58,7 +59,7 @@ export default defineConfig((/* ctx */) => {
 
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
-      
+
       vitePlugins: [
         ['vite-plugin-checker', {
           eslint: {
