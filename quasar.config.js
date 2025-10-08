@@ -34,14 +34,23 @@ export default defineConfig((/* ctx */) => {
     ],
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#build
-    build: {
-      target: {
+       build: {
+      publicPath: '/6704101360-pattanun-puntuy/',
+      vueRouterMode: 'hash', // available values: 'hash', 'history'
+
+      // webpackTranspile: false,
+
+      // Add dependencies for transpiling with Babel (Array of string/regex)
+      // (from node_modules, which are by default not transpiled).
+      // Applies only if "webpackTranspile" is set to true.
+      // webpackTranspileDependencies: [],
+
+      esbuildTarget: {
         browser: [ 'es2022', 'firefox115', 'chrome115', 'safari14' ],
         node: 'node20'
       },
 
-      vueRouterMode: 'hash', // available values: 'hash', 'history'
-      publicPath: '/6704101360-pattanun-puntuyนะ/',
+
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
